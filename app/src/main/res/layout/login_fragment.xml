@@ -7,18 +7,123 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ff8800"
     tools:context="com.example.beginnerprogrammersslowmotion.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logoInverted"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/hint"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#FFFFFF"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Programmers"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginTop="28dp" />
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Beginner"
+        android:id="@+id/textView2"
+        android:layout_marginStart="64dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="email"
+        android:layout_above="@+id/hint"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="LOG IN"
+        android:id="@+id/button2"
+        android:textColor="#ff8800"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="SIGN UP"
+        android:id="@+id/button"
+        android:textColor="#ff8800"
+        android:backgroundTint="#FFFFFF"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:text="forgot password?"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="sans-serif-thin"
+        android:layout_below="@+id/hint"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:text="email"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/hint"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#FFFFFF"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true" />
+
+
 </RelativeLayout>
