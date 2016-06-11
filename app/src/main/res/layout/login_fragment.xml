@@ -76,7 +76,8 @@
         android:backgroundTint="#FFFFFF"
         android:layout_marginTop="18dp"
         android:layout_below="@+id/textView4"
-        android:layout_alignEnd="@+id/textView3" />
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -87,7 +88,8 @@
         android:backgroundTint="#FFFFFF"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/button2"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -106,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
-        android:text="email"
+        android:text="password"
         android:textColor="#FFFFFF"
         android:textIsSelectable="false"
         android:textAppearance="?android:attr/textAppearanceLarge"
