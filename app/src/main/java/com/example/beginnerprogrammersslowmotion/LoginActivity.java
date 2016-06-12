@@ -13,7 +13,10 @@ public class LoginActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(R.id.container, new LoginFragment(),null).commit();
     }
 
-    public void replacementKillers (Fragment fragment){
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment, null).commit();
+    public void touchMePlaya(Fragment fragment){
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment, null).addToBackStack(null).commit();
+
+
+
     }
 }
