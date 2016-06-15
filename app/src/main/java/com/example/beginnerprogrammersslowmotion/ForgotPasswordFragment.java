@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.firebase.client.Firebase;
+
 
 /**
  * Created by Philip on 6/12/2016.
@@ -18,6 +20,14 @@ public class ForgotPasswordFragment extends Fragment {
         View view = inflater.inflate(R.layout.forgot_password_fragment, container, false);
 
         return view;
+
+//        var ref = new Firebase("project-5471953970192268570.firebaseio.com");
+//
+//        ref.resetPassword({
+//                email: "philipkao81@gmail.com"
+//        }, function(error) {
+//            if error
+//        }
 
     }
 }
